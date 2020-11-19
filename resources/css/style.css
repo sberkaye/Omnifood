@@ -1,31 +1,46 @@
 /* ---------------------------- BASIC SETUP ---------------------------- */
 
+/* get rid of browser defined paddings and margins and use border-box */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* variables */
 :root {
   --main-orange: #e67e22;
   --orange-darker: #cf6d17;
+  --main-font-color: #555;
 }
 
+/* mainly font settings */
 html {
   background-color: #fff;
-  color: #555;
+  color: var(--main-font-color);
   font-family: "Lato", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
 }
 
+/* a row means that the content inside it will be centered horizontally in a new row */
 .row {
   max-width: 1140px;
   margin: 0 auto;
 }
 
+/* 
+  creating whitespace with padding instead of margin because some sections will have
+  different backgrounds
+*/
+section {
+  padding: 80px 0;
+}
+
 /* ---------------------------- HEADER ---------------------------- */
+
+/* mainly background settings here */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(img/hero.jpg);
@@ -34,17 +49,7 @@ header {
   height: 100vh;
 }
 
-h1 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  color: #fff;
-  font-size: 240%;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  word-spacing: 5px;
-}
-
+/* this will be the main text that will be shown above the bg image, also the buttons */
 .hero-text-box {
   position: absolute;
   width: 1140px;
@@ -53,6 +58,7 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
+/* company logo */
 .logo {
   height: 100px;
   width: auto;
@@ -60,6 +66,7 @@ h1 {
   margin-top: 20px;
 }
 
+/* main navigation */
 .main-nav {
   float: right;
   list-style: none;
@@ -85,6 +92,53 @@ h1 {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid var(--main-orange);
+}
+
+/* ---------------------------- HEADINGS ---------------------------- */
+
+/*
+  titles that are used on the page; 
+  h1 - main title
+  h2 - section titles
+  */
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* put an orange line after each section title */
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: var(--main-orange);
+  margin: 0 auto;
+  margin-top: 30px;
+  content: " ";
+  width: 100px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
 }
 
 /* ---------------------------- BUTTONS ---------------------------- */
@@ -123,4 +177,32 @@ h1 {
   background-color: var(--orange-darker);
   border: 1px solid var(--orange-darker);
   color: #fff;
+}
+
+/* ---------------------------- PARAGRAPHS ---------------------------- */
+
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.box p {
+  line-height: 145%;
+  font-size: 90%;
+}
+
+/* ---------------------------- ICONS ---------------------------- */
+
+.icon-big {
+  font-size: 350%;
+  display: block;
+  color: var(--main-orange);
+  margin-bottom: 10px;
+}
+
+/* ---------------------------- COLUMNS ---------------------------- */
+
+.box {
+  padding: 1%;
 }
