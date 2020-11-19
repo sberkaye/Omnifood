@@ -206,3 +206,47 @@ h3 {
 .box {
   padding: 1%;
 }
+
+/* ---------------------------- FEATURES SECTION ---------------------------- */
+
+.section-features .long-copy {
+  margin-bottom: 30px;
+}
+
+/* ---------------------------- MEALS SECTION ---------------------------- */
+
+.section-meals {
+  padding: 0;
+}
+
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.meal-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+/* create a zooming out effect */
+.meal-photo img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
