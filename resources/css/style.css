@@ -12,7 +12,7 @@
   --main-orange: #e67e22;
   --orange-darker: #cf6d17;
   --main-font-color: #555;
-  --section-steps-bg: #f4f4f4;
+  --section-gray-bg: #f4f4f4;
 }
 
 /* mainly font settings */
@@ -220,6 +220,7 @@ a:active {
   margin-bottom: 10px;
 }
 
+/* this icon class is used to style the list elements */
 .icon-small {
   display: inline-block;
   width: 30px;
@@ -286,7 +287,7 @@ a:active {
 /* ---------------------------- HOW IT WORKS SECTION ---------------------------- */
 
 .section-steps {
-  background-color: var(--section-steps-bg);
+  background-color: var(--section-gray-bg);
 }
 
 /* text-align property is used to position the image */
@@ -388,4 +389,59 @@ cite img {
   border-radius: 100%;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+/* ---------------------------- PLANS SECTION ---------------------------- */
+
+.section-plans {
+  background-color: var(--section-gray-bg);
+}
+
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 5px 0;
+}
+
+.plan-box div:first-child {
+  background-color: #fcfcfc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* aling the button horizontally and get rid of the bottom border */
+.plan-box div:last-child {
+  text-align: center;
+  border: 0;
+}
+
+.plan-price {
+  font-size: 300%;
+  font-weight: 100;
+  margin-bottom: 10px;
+  color: var(--main-orange);
+}
+
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300;
+}
+
+.plan-price-meal {
+  font-size: 80%;
 }
