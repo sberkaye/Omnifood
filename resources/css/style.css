@@ -180,6 +180,23 @@ h3 {
   color: #fff;
 }
 
+/* ---------------------------- LINKS ---------------------------- */
+
+a:link,
+a:visited {
+  color: var(--main-orange);
+  text-decoration: none;
+  border-bottom: 1px solid var(--main-orange);
+  padding-bottom: 2px;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
+a:hover,
+a:active {
+  color: var(--main-font-color);
+  border-bottom: 1px solid transparent;
+}
+
 /* ---------------------------- PARAGRAPHS ---------------------------- */
 
 .long-copy {
@@ -200,6 +217,18 @@ h3 {
   display: block;
   color: var(--main-orange);
   margin-bottom: 10px;
+}
+
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: var(--main-orange);
+  font-size: 120%;
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 10px;
 }
 
 /* ---------------------------- COLUMNS ---------------------------- */
@@ -297,8 +326,25 @@ h3 {
   margin-right: 25px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
+
 .btn-app img {
   height: 50px;
   width: auto;
   margin-right: 10px;
+}
+
+/* ---------------------------- CITIES SECTION ---------------------------- */
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.city-feature {
+  margin: 5px auto;
 }
