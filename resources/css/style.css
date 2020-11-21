@@ -141,7 +141,7 @@ header {
   box-shadow: 0 2px 2px #efefef;
 }
 
-.main-nav {
+.sticky .main-nav {
   margin-top: 18px;
 }
 
