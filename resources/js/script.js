@@ -13,6 +13,7 @@ $(document).ready(function () {
       offset: "56px", // 20px(font) + 18px(margin) + 16px(padding) + 2px(box-shadow)
     }
   );
+
   // scroll on buttons
   $(".js--scroll-to-plans").click(function () {
     $("html, body").animate(
@@ -26,6 +27,7 @@ $(document).ready(function () {
       500
     );
   });
+
   // scroll animations
   $(".js--wp-1").waypoint(
     function (direction) {
@@ -66,4 +68,19 @@ $(document).ready(function () {
       offset: "40%",
     }
   );
+
+  // mobile nav
+  $(".js--mobile-nav-icon").click(function () {
+    var nav = $(".js--main-nav");
+    var icon = $(".js--mobile-nav-icon i");
+
+    nav.slideToggle(200);
+    if (icon.hasClass("ion-ios-menu")) {
+      icon.addClass("ion-ios-close");
+      icon.removeClass("ion-ios-menu");
+    } else {
+      icon.addClass("ion-ios-menu");
+      icon.removeClass("ion-ios-close");
+    }
+  });
 });
