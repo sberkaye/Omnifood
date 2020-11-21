@@ -10,6 +10,10 @@
       href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="resources/css/style.css" />
     <link rel="stylesheet" href="resources/css/queries.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -36,22 +40,24 @@
             class="logo-black"
           />
           <ul class="main-nav">
-            <li><a href="#">Food delivery</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Our cities</a></li>
-            <li><a href="#">Sign up</a></li>
+            <li><a href="#features">Food delivery</a></li>
+            <li><a href="#works">How it works</a></li>
+            <li><a href="#cities">Our cities</a></li>
+            <li><a href="#plans">Sign up</a></li>
           </ul>
         </div>
       </nav>
       <!-- ---------------------------HERO IMAGE--------------------------- -->
       <div class="hero-text-box">
         <h1>Goodbye junk food.<br />Hello super healthy meals.</h1>
-        <a class="btn btn-full" href="#">I'm hungry</a>
-        <a class="btn btn-ghost" href="#">Show me more</a>
+        <a class="btn btn-full js--scroll-to-plans" href="#">I'm hungry</a>
+        <a class="btn btn-ghost js--scroll-to-features" href="#"
+          >Show me more</a
+        >
       </div>
     </header>
     <!-- ---------------------------FEATURES SECTION--------------------------- -->
-    <section class="section-features js--section-features">
+    <section class="section-features js--section-features" id="features">
       <div class="row">
         <h2>Get food fast &mdash; not fast food</h2>
         <p class="long-copy">
@@ -60,7 +66,7 @@
           we're really gooad at it, we promise!
         </p>
       </div>
-      <div class="row">
+      <div class="row js--wp-1">
         <div class="col span-1-of-4 box">
           <i class="ion-ios-infinite icon-big"></i>
           <h3>Up to 365 days/year</h3>
@@ -169,7 +175,7 @@
       </ul>
     </section>
     <!-- ---------------------------HOW IT WORKS SECTION--------------------------- -->
-    <section class="section-steps">
+    <section class="section-steps" id="works">
       <div class="row">
         <h2>How it works &mdash; Simple as 1, 2, 3</h2>
       </div>
@@ -178,7 +184,7 @@
           <img
             src="resources/img/app-iPhone.png"
             alt="Omnifood app on iPhone"
-            class="app-screen"
+            class="app-screen js--wp-2"
           />
         </div>
         <div class="col span-1-of-2 steps-box">
@@ -214,11 +220,11 @@
       </div>
     </section>
     <!-- ---------------------------CITIES SECTION--------------------------- -->
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
       <div class="row">
         <h2>We're currently in these cities</h2>
       </div>
-      <div class="row">
+      <div class="row js--wp-3">
         <!-- ---------------------------SAN FRANSISCO--------------------------- -->
         <div class="col span-1-of-4 box">
           <img src="resources/img/san-francisco.jpg" alt="San Fransisco" />
@@ -326,13 +332,13 @@
       </div>
     </section>
     <!-- ---------------------------PLANS SECTION--------------------------- -->
-    <section class="section-plans">
+    <section class="section-plans js--section-plans" id="plans">
       <div class="row">
         <h2>Start eating healthy today</h2>
       </div>
-      <div class="row">
+      <div class="row js--wp-4">
         <div class="col span-1-of-3">
-          <div class="plan-box">
+          <div class="plan-box js--plan-box-premium">
             <div>
               <h3>Premium</h3>
               <p class="plan-price">$399 <span>/ month</span></p>
