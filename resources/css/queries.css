@@ -1,0 +1,87 @@
+/* Big tablets to 1200px (widths smaller than 1200px)
+   1200px because it is close to 1140px which is the default width of a row
+*/
+@media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .row {
+    padding: 0 2%;
+  }
+}
+
+/* Small tablets to big tablets (768-1023 pixels) */
+@media only screen and (max-width: 1023px) {
+  html {
+    font-size: 18px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .long-copy {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  /* HOW IT WORKS SECTION */
+
+  .steps-box {
+    margin-top: 10px;
+  }
+
+  .steps-box:last-child {
+    margin-top: 10px;
+  }
+
+  .works-step {
+    margin-bottom: 40px;
+  }
+
+  .works-step:last-of-type {
+    margin-bottom: 60px;
+  }
+
+  .app-screen {
+    width: 50%;
+  }
+
+  /* CITIES SECTION */
+
+  .icon-small {
+    width: 16px;
+    margin-right: 5px;
+  }
+
+  .city-feature {
+    font-size: 90%;
+  }
+
+  /* PLANS SECTION */
+
+  .plan-box {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .plan-price {
+    font-size: 250%;
+  }
+
+  /* FORM SECTION */
+
+  .contact-form {
+    width: 80%;
+  }
+}
+
+/* Small phones to small tablets (481-767 pixels) */
+@media only screen and (max-width: 767px) {
+}
+
+/* Small phones (0-480 pixels) */
+@media only screen and (max-width: 480px) {
+}
